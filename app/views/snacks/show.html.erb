@@ -8,7 +8,7 @@ Machine Locations :
 
   <% @snack.machines.each do |machine| %>
   <li>
-  <%= machine.location %>
+  <%= machine.location %>  (<%= machine.unique_snack_count %> kinds of snacks, average price of $<%= machine.average_snack_price %>0)
   </li>
   <% end %>
 </ul>
