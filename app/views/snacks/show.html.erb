@@ -1,3 +1,14 @@
 <h1> Snack Show page for <%= @snack.name %></h1>
 
-Price for this snack: <%= @snack.price %>
+Price for this snack: <%= @snack.price %><br>
+
+Machine Locations :
+
+<ul>
+
+  <% @snack.machines.each do |machine| %>
+  <li>
+  <%= machine.location %>
+  </li>
+  <% end %>
+</ul>
